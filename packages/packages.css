@@ -1,0 +1,111 @@
+.main-style {
+    vertical-align: middle;
+    padding: 1.2rem 0;
+}
+
+.background {
+    background: url("../images/portgas-d-ace-wallpaper-full-hd-1920x1080-314804.jpg") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    filter: grayscale(40%);
+}
+
+.package-section{
+    width: 50%;
+    padding: 1rem 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    border: #0e4f1f solid 3px;
+    border-left: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.package-section:hover,
+.package-section:active{
+    border: #E94B3CFF solid 3px;
+    border-left: none;
+}
+.clear-fix{
+    clear: both;
+}
+.package-section__free{
+    background: #d5ffdc;
+    float: right;
+    border: #0e4f1f solid 3px;
+    margin-right: 20%;
+}
+
+.package-section__free:hover,
+.package-section__free:active{
+    border: #E94B3CFF solid 3px;
+}
+
+.package-section__premium{
+    background: #2C5F2D;
+}
+
+.package-section__plus{
+    background: #b5ffbd;
+    margin-top: 2.5rem;
+}
+.package-section__plus__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.7rem 0.3rem;
+    font-size: 1.5rem;
+    background: rgba(255, 46, 27, 0.9);
+    color: white;
+    border: 2px solid black;
+    /*margin: 20px;*/
+}
+
+.package-section a{
+    text-decoration: none;
+    display: block;
+}
+
+.package-section__details{
+    color: rgba(104, 98, 98, 0.81);
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.package-section__type{
+    color: #0e4f1f;
+    font-size: 2rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.package-section__premium .package-section__type,
+.package-section__premium .package-section__details{
+    color: #ffffff;
+}
+
+.package-section__premium .package-section__description{
+    border-color: #97BC62FF;
+}
+.package-section__description{
+    background: white;
+    color: #0e4f1f;
+    border: #0e4f1f 2px solid;
+    padding: 0.4rem;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+/*.recommended-badge {*/
+/*    background: url("../images/whitebeard_logo_comicsense-1100x1467-removebg-preview.png");*/
+/*    position: absolute;*/
+/*    width: 20%;*/
+/*    height: 20%;*/
+/*    margin: 0;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    z-index: 1;*/
+/*}*/
