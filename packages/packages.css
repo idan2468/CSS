@@ -18,9 +18,8 @@
 .package-section{
     width: 50%;
     padding: 1rem 1rem;
-    margin: 0.5rem 0.5rem 0.5rem 0;
+    margin: 0.5rem 0.5rem 0.5rem 2rem;
     border: #0e4f1f solid 3px;
-    border-left: none;
     cursor: pointer;
     position: relative;
 }
@@ -28,7 +27,6 @@
 .package-section:hover,
 .package-section:active{
     border: #E94B3CFF solid 3px;
-    border-left: none;
 }
 .clear-fix{
     clear: both;
@@ -51,18 +49,21 @@
 
 .package-section__plus{
     background: #b5ffbd;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
+}
+
+.package-section__plus .package-section__type{
+    margin-top:2rem;
 }
 .package-section__plus__badge {
     position: absolute;
     top: 0;
     right: 0;
     margin: 0.7rem 0.3rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background: rgba(255, 46, 27, 0.9);
     color: white;
     border: 2px solid black;
-    /*margin: 20px;*/
 }
 
 .package-section a{
@@ -81,6 +82,7 @@
     font-size: 2rem;
     font-weight: bold;
     vertical-align: middle;
+    margin: 0;
 }
 .package-section__premium .package-section__type,
 .package-section__premium .package-section__details{

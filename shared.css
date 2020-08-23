@@ -72,8 +72,8 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
-    width: calc(100% - 122px);
+    display: none;
+    width: calc(100% - 50px);
     vertical-align: middle;
 }
 
@@ -142,8 +142,8 @@ body {
 
 .main-footer {
     background: rgba(0, 0, 0, 0.8);
-    padding: 1rem 1rem 1rem 0;
-    margin-top: 4rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    /*margin-top: 4rem;*/
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -208,3 +208,11 @@ body {
     display: block !important;
 }
 
+@media (min-width: 530px) {
+    .main-nav{
+        display: inline-block;
+    }
+    .toggle-button{
+        display: none;
+    }
+}

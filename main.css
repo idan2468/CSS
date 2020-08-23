@@ -1,16 +1,19 @@
 #product-overview {
     background: linear-gradient(to top, rgba(80, 68, 18, 0.5) 1%, transparent),
-    url("images/4597635-pirates-portgas-d.-ace-whitebeard-fire-one-piece-anime.jpg") center top 55%/ cover no-repeat border-box;
-    width: 100vw;
+    url("images/4597635-pirates-portgas-d.-ace-whitebeard-fire-one-piece-anime.jpg") no-repeat border-box;
+    background-position: center -2rem;
+    background-size: cover;
+    zoom: 1.2;
     height: 60vh;
     padding: 0.7rem;
     position: relative;
-    margin: 3rem 0;
+
 }
 
 .section-title {
     color: #2ddf5c;
     text-align: center;
+    vertical-align: middle;
 }
 
 #product-overview h1 {
@@ -22,6 +25,7 @@
     left: 35%;
 }
 
+
 /*#plans p::first-letter {*/
 /*    font-size: 2.5rem;*/
 /*    font-weight: bold;*/
@@ -29,16 +33,21 @@
 /*    padding-left: 0.2rem;*/
 /*}*/
 
+.plans-div {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
 
 .plan-article {
-    display: inline-block;
-    padding: 1.3rem;
-    margin: 1rem;
+    display: block;
+    padding: 1rem;
+    margin: 0.5rem 0;
     background: #d5ffdc;
-    vertical-align: middle;
     text-align: center;
-    width: 28%;
+    width: 100%;
 }
+
 
 .plan-article * {
     padding: 0.2rem 0.2rem;
@@ -55,9 +64,10 @@
 
 .plan-article__recommended {
     background: #1ea348;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);*/
     color: whitesmoke;
 }
+
 
 .plan-article__recommended__title {
     background: whitesmoke;
@@ -65,6 +75,7 @@
     border-radius: 8px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
+
 
 .plan-article__features {
     padding: 0;
@@ -81,7 +92,7 @@
 
 #key-features {
     background: #e53c6f;
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
     color: white;
     margin-bottom: 3.8rem;
     vertical-align: middle;
@@ -89,6 +100,7 @@
 
 .key-features__title {
     text-align: center;
+    font-size: 1.2rem;
     padding: 0.4rem 0 0.7rem;
 }
 
@@ -98,9 +110,10 @@
 }
 
 .key-features__lst__item {
-    width: 30%;
-    display: inline-block;
+    display: block;
     margin-top: 0.4rem;
+    margin-right: 10%;
+    padding-bottom: 0.5rem;
 }
 
 .key-features__lst__item div {
@@ -112,16 +125,26 @@
     display: inline-block;
 }
 
-
-.plans-div {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-}
-
 .key-features__image {
     padding: 1rem;
+}
+
+@media (min-width: 45rem) {
+    #key-features {
+        margin-top: 4.5rem;
+    }
+
+    .key-features__lst__item {
+        width: 20%;
+        max-height: 10rem;
+        max-width: 30rem;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .key-features__lst__items {
+        padding-left: 10%;
+    }
 }
 
 .modal {
@@ -171,4 +194,44 @@
 .modal__action--negative:active {
     background: #ff5454;
     border-color: #ff5454;
+}
+
+
+@media (min-width: 45rem) {
+    #product-overview h1 {
+        font-size: 3rem;
+    }
+
+    #product-overview {
+        zoom: 0;
+        background-position: center top 45%;
+    }
+}
+
+@media (min-width: 45rem) {
+    .plans-div {
+        vertical-align: middle;
+    }
+
+    .plan-article {
+        display: inline-block;
+        padding: 1.3rem;
+        margin: 1rem;
+        vertical-align: middle;
+        width: 28%;
+    }
+}
+
+@media (min-width: 45rem) {
+    .plan-article__recommended {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .plan-article__recommended__title {
+        background-size: cover;
+        margin: auto;
+        font-size: 1rem;
+        min-width: min-content;
+        max-width: 30rem;
+    }
 }
