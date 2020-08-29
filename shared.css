@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -23,7 +27,7 @@ body {
     top: 0;
     left: 0;
     background: #7AA5BF;
-    padding: 0.5rem 1rem;
+    padding: 0.1rem 0;
     z-index: 1;
 }
 
@@ -90,7 +94,7 @@ body {
 }
 
 .main-nav__item a,
-.mobile-nav__item a{
+.mobile-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
     font-weight: bold;
@@ -100,14 +104,14 @@ body {
 .main-nav__item a:hover,
 .main-nav__item a:active,
 .mobile-nav__item a:hover,
-.mobile-nav__item a:active{
+.mobile-nav__item a:active {
     color: white;
     border-bottom: whitesmoke solid 2px;
 }
 
 
 .main-nav__cta a,
-.mobile-nav__item--cta a{
+.mobile-nav__item--cta a {
     color: white;
     background: #ff1b68;
     padding: 0.5rem 1rem;
@@ -134,10 +138,19 @@ body {
     cursor: pointer;
 }
 
+
+
 .button:active,
 .button:hover {
     background: darkviolet;
     color: white;
+}
+
+.button[disabled] {
+    cursor: not-allowed;
+    border-color: #cccccc;
+    background: #cccccc;
+    color: #00000085;
 }
 
 .main-footer {
@@ -204,15 +217,17 @@ body {
     font-size: 1.5rem;
 }
 
-.open{
+.open {
     display: block !important;
 }
 
 @media (min-width: 530px) {
-    .main-nav{
+    .main-nav {
         display: inline-block;
     }
-    .toggle-button{
+
+    .toggle-button {
         display: none;
     }
 }
+
