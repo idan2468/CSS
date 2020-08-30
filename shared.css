@@ -27,8 +27,11 @@ body {
     top: 0;
     left: 0;
     background: #7AA5BF;
-    padding: 0.1rem 0;
+    /*padding: 0.1rem 0;*/
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-header__brand {
@@ -36,10 +39,8 @@ body {
     color: #0e4f1f;
     font-weight: bold;
     font-size: 1.5rem;
-    display: inline-block;
-    height: 2.5rem;
-    width: 2.5rem;
-    vertical-align: middle;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .toggle-button {
@@ -47,9 +48,6 @@ body {
     background: transparent;
     border: none;
     cursor: pointer;
-    padding-top: 0;
-    padding-bottom: 0;
-    vertical-align: middle;
 }
 
 .toggle-button:focus {
@@ -66,19 +64,16 @@ body {
 
 
 .main-header__brand > img {
-    width: 100%;
-    height: 100%;
+    height: 3rem;
+    vertical-align: middle;
 }
 
 .main-header > div {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
 }
 
 .main-nav {
     display: none;
-    width: calc(100% - 50px);
-    vertical-align: middle;
 }
 
 .main-nav__items {
@@ -86,11 +81,11 @@ body {
     margin: 0;
     list-style: none;
     text-align: right;
+    display: flex;
 }
 
 .main-nav__item {
-    display: inline-block;
-    margin: 0 0.8rem;
+    margin: 0 0.2rem 0 1.5rem;
 }
 
 .main-nav__item a,
@@ -102,10 +97,14 @@ body {
 }
 
 .main-nav__item a:hover,
-.main-nav__item a:active,
+.main-nav__item a:active{
+    color: white;
+    border-bottom: whitesmoke solid 2px;
+}
+
 .mobile-nav__item a:hover,
 .mobile-nav__item a:active {
-    color: white;
+    color: mediumpurple;
     border-bottom: whitesmoke solid 2px;
 }
 
@@ -156,7 +155,6 @@ body {
 .main-footer {
     background: rgba(0, 0, 0, 0.8);
     padding: 0.5rem 0.5rem 0.5rem 0;
-    /*margin-top: 4rem;*/
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -169,11 +167,12 @@ body {
     margin: 0;
     text-align: center;
     vertical-align: middle;
+    display: flex;
+    justify-content: center;
 }
 
 .main-footer__nav__link {
-    display: inline-block;
-    padding: 0.4rem;
+    padding: 0.4rem 1rem;
 }
 
 .main-footer__nav__link a {
@@ -196,7 +195,7 @@ body {
     top: 0;
     left: 0;
     background: white;
-    width: 80%;
+    width: 60%;
     height: 100vh;
 }
 
@@ -204,9 +203,11 @@ body {
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .mobile-nav__item {
@@ -223,7 +224,7 @@ body {
 
 @media (min-width: 530px) {
     .main-nav {
-        display: inline-block;
+        display: block;
     }
 
     .toggle-button {

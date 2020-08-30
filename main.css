@@ -1,11 +1,11 @@
 #product-overview {
     background: linear-gradient(to top, rgba(80, 68, 18, 0.5) 1%, transparent),
     url("images/4597635-pirates-portgas-d.-ace-whitebeard-fire-one-piece-anime.jpg") no-repeat border-box;
-    background-position: center -2rem;
+    background-position: center;
     background-size: cover;
-    zoom: 1.2;
-    height: 60vh;
-    padding: 0.7rem;
+    background-size: cover;
+    zoom: 1.7;
+    height: 40vh;
     position: relative;
 
 }
@@ -34,24 +34,22 @@
 /*}*/
 
 .plans-div {
-    width: 100%;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .plan-article {
-    display: block;
-    padding: 1rem;
-    margin: 0.5rem 0;
     background: #d5ffdc;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    margin: 0.5rem;
 }
 
-
-.plan-article * {
-    padding: 0.2rem 0.2rem;
-}
 
 .plan-article__price {
     color: gray;
@@ -64,7 +62,6 @@
 
 .plan-article__recommended {
     background: #1ea348;
-    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);*/
     color: whitesmoke;
 }
 
@@ -73,17 +70,27 @@
     background: whitesmoke;
     color: #1ea348;
     border-radius: 8px;
+    padding: 0.2rem;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 
 .plan-article__features {
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .button:focus {
     outline: none;
+}
+
+.plan-article .button {
+    margin: 0.5rem 0.5rem;
 }
 
 .plan-article__recommended .plan-article__price {
@@ -105,6 +112,9 @@
 }
 
 .key-features__lst__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
     text-align: center;
 }
@@ -129,23 +139,6 @@
     padding: 1rem;
 }
 
-@media (min-width: 45rem) {
-    #key-features {
-        margin-top: 4.5rem;
-    }
-
-    .key-features__lst__item {
-        width: 20%;
-        max-height: 10rem;
-        max-width: 30rem;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    .key-features__lst__items {
-        padding-left: 10%;
-    }
-}
 
 .modal {
     position: fixed;
@@ -196,6 +189,22 @@
     border-color: #ff5454;
 }
 
+@media (min-width: 45rem) {
+    #key-features {
+        margin-top: 4.5rem;
+    }
+
+    .key-features__lst__item {
+        max-height: 10rem;
+        max-width: 30rem;
+    }
+
+    .key-features__lst__items {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 @media (min-width: 45rem) {
     #product-overview h1 {
@@ -205,26 +214,27 @@
     #product-overview {
         zoom: 0;
         background-position: center top 45%;
+        height: 70vh;
     }
 }
 
 @media (min-width: 45rem) {
     .plans-div {
-        vertical-align: middle;
+        flex-direction: row;
     }
 
     .plan-article {
-        display: inline-block;
         padding: 1.3rem;
         margin: 1rem;
-        vertical-align: middle;
         width: 28%;
+        height: 25rem;
     }
 }
 
 @media (min-width: 45rem) {
     .plan-article__recommended {
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        height: 28rem;
     }
 
     .plan-article__recommended__title {
@@ -233,5 +243,10 @@
         font-size: 1rem;
         min-width: min-content;
         max-width: 30rem;
+        padding: 0.2rem 0.2rem;
+    }
+
+    .plan-article__details{
+        text-align: center;
     }
 }
