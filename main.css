@@ -3,9 +3,10 @@
     url("images/4597635-pirates-portgas-d.-ace-whitebeard-fire-one-piece-anime.jpg") no-repeat border-box;
     background-position: center;
     background-size: cover;
-    background-size: cover;
-    zoom: 1.7;
-    height: 40vh;
+    /*zoom: 1.7;*/
+    /*transform-origin: center;*/
+    transform: translateY(-2rem);
+    height: 70vh;
     position: relative;
 
 }
@@ -100,9 +101,9 @@
 #key-features {
     display: flex;
     background: #e53c6f;
-    /*margin-top: 3.5rem;*/
+    margin-top: 0.5rem;
     color: white;
-    margin: 3rem 0;
+    /*margin: 3rem 0;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -145,8 +146,10 @@
 
 .modal {
     position: fixed;
-    display: none;
+    opacity: 0;
     z-index: 200;
+    transform: translateY(-3rem);
+    transition: opacity 200ms ease-in, transform 500ms ease-in;
     top: 20%;
     left: 30%;
     width: 40%;
@@ -194,7 +197,7 @@
 
 @media (min-width: 45rem) {
     #key-features {
-        margin-top: 4.5rem;
+        margin-top: 2.5rem;
     }
 
     .key-features__lst__item {
@@ -217,9 +220,10 @@
     }
 
     #product-overview {
-        zoom: 0;
+        /*zoom: 0;*/
         background-position: center top 45%;
         height: 70vh;
+        transform: translateY(-1rem);
     }
 }
 

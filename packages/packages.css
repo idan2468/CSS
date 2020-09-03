@@ -22,6 +22,7 @@
     border: #0e4f1f solid 3px;
     cursor: pointer;
     position: relative;
+    overflow: hidden;
 }
 
 .package-section:hover,
@@ -59,11 +60,16 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin: 0.7rem 0.3rem;
-    font-size: 1.2rem;
+    /*margin: 0.7rem 0.3rem;*/
+    font-size: 1rem;
     background: rgba(255, 46, 27, 0.9);
     color: white;
     border: 2px solid black;
+    margin: 0;
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(0.5rem);
+    transform-origin: center;
+    text-align: center;
+    padding: 0 1.5rem;
 }
 
 .package-section a{
