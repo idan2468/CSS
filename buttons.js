@@ -5,11 +5,17 @@ buttons = document.querySelectorAll('.button');
 
 const choosePlan = (evt) => {
   modal.classList.add('open');
-  backDrop.classList.add('open');
+  backDrop.style["display"] = "block";
+  setTimeout(function () {
+    backDrop.classList.add('open');
+  },10)
   console.dir(modal);
 }
 modalButton.addEventListener('click', () => {
   backDrop.classList.remove('open');
+  setTimeout(function () {
+    backDrop.style["display"] = "none";
+  },500)
   modal.classList.remove('open');
 })
 

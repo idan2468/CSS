@@ -27,13 +27,6 @@
 }
 
 
-/*#plans p::first-letter {*/
-/*    font-size: 2.5rem;*/
-/*    font-weight: bold;*/
-/*    font-family: 'Goudy Bookletter 1911', serif;*/
-/*    padding-left: 0.2rem;*/
-/*}*/
-
 .plans-div {
     display: flex;
     flex-direction: column;
