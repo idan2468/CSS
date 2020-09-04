@@ -1,5 +1,5 @@
 .signup-page {
-    margin-top: 10rem;
+    align-self: center;
 }
 
 .signup-title {
@@ -85,5 +85,10 @@
     .signup-form {
         margin: auto;
         width: 30rem;
+    }
+    .signup-page {
+        margin-top: 10rem;
+        align-self: unset;
+        height: 40rem;
     }
 }
