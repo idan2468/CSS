@@ -121,7 +121,7 @@ main {
     vertical-align: middle;
 }
 
-.main-header > div {
+.main-header > div:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
