@@ -1,7 +1,7 @@
 # CSS
 
 # Introduction
-As part of my learning jurney I've learned using CSS features and built customized website with animations.
+As part of my learning journey, I've learned to use CSS features and built a customized website with animations.
 
 ## Technologies
 - CSS
@@ -12,8 +12,8 @@ As part of my learning jurney I've learned using CSS features and built customiz
 
 ## Functionalities
 - Fully Responsive Mobile view using flexbox.
-- Used Transition/Tranformations for custom animation.
-- Picking color platte that fits well to the website
+- Used Transition/Transformations for custom animation.
+- Picking color palette that fits well to the website
 - Modal popup
 - Enabling backdrop
 - Fixed Header and footer
